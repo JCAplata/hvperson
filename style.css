@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #111;
+}
+
+.contenedor {
+  display: flex;
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* LADO IZQUIERDO */
+.perfil {
+  width: 30%;
+  background: #f0f0f0;
+  padding: 30px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.contacto {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.contacto li {
+  margin-bottom: 10px;
+}
+
+.sobre-mi h2,
+.habilidades h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.sobre-mi p {
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* HABILIDADES */
+.barra {
+  margin-bottom: 15px;
+}
+
+.barra span {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 3px;
+  text-transform: lowercase;
+}
+
+.nivel {
+  height: 5px;
+  background: #ddd;
+  width: 100%;
+  position: relative;
+}
+
+.llenado {
+  height: 100%;
+  background: #000;
+}
+
+.alto {
+  width: 100%;
+}
+
+.medio {
+  width: 60%;
+}
+
+/* LADO DERECHO */
+.contenido {
+  width: 70%;
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+header h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 8px 0 20px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.subtitulo {
+  font-size: 13px;
+  margin: 3px 0 10px;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+ul li {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .perfil, .contenido {
+    width: 100%;
+  }
+
+  .perfil {
+    text-align: center;
+  }
+
+  .sobre-mi p {
+    text-align: center;
+  }
+}
